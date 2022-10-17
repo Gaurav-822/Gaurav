@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+
+        <meta name="viewport", content="initial-scale", width="device-width">
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#check').addEventListener('click', function(){
+              let input = document.querySelector('input');
+
+              if ('hi'.localeCompare(input.value.toLowerCase()) == 0){
+                document.querySelector('#qsi').innerHTML = 'Hello! Lovely to see you';
+              }
+              else if('hello'.localeCompare(input.value.toLowerCase()) == 0){
+                document.querySelector('#qsi').innerHTML = 'Hi, nice to meet you!';
+              }
+              else{
+                document.querySelector('#qsi').innerHTML = 'Sorry, but I did not get that, maybe I will understand in the future :)';
+              }
+            });
+          });
+        </script>
+    </head>
+    <body>
+      <div class="navbar">
+          <!-- NavBar -->
+          <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1>Gaurav Bhushan Kumar</h1><h4>Electrical Engineer, NIT Silchar</h4></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact Me
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://www.instagram.com/soulgaurav?utm_source=qr">Instagram</a></li>
+                        <li><a class="dropdown-item" href="https://t.me/Gaurav_15081947">Telegram</a></li>
+                        <li><a class="dropdown-item" href="gmail.html">Mail</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <hr>
+        <style>
+            body {
+              background-image: url('Img.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100%;
+            }
+        </style>
+        <hr>
+        <div class="centre">
+            Hi, welcome here,<br>
+            and thanks for coming,<br>
+            hope you all are doing great.
+            <hr>
+        </div>
+        <div class="qs">
+          <input type="text" placeholder="Say Hi to me" autofocus autocomplete="off"></input>
+          <button id="check">Say</button>
+          <p id="qsi"></p>
+        </div>
+    </body>
+</html>
