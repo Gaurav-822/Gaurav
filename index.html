@@ -2,6 +2,7 @@
 
 <html lang="en">
     <head>
+        <link href="Img.jpg" rel="icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
@@ -18,13 +19,13 @@
               let input = document.querySelector('input');
 
               if ('hi'.localeCompare(input.value.toLowerCase()) == 0){
-                document.querySelector('#qsi').innerHTML = 'Hello! It’s great connecting with you!';
+                document.querySelector('#qsi').innerHTML = 'Hello! Lovely to see you';
               }
               else if('hello'.localeCompare(input.value.toLowerCase()) == 0){
-                document.querySelector('#qsi').innerHTML = 'Hi, Lovely to meet you!';
+                document.querySelector('#qsi').innerHTML = 'Hi, nice to meet you!';
               }
               else{
-                document.querySelector('#qsi').innerHTML = 'Sorry, but I didn\'t get that still now, maybe I will understand it in the future :)';
+                document.querySelector('#qsi').innerHTML = 'Sorry, but I did not get that, maybe I will understand in the future :)';
               }
             });
           });
