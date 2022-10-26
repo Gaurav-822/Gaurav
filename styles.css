@@ -12,7 +12,7 @@ body {
     font-weight: 550;
     line-height: 2;
     margin: 0;
-    text-align: right;
+    text-align: left;
     font-style: italic;
 }
 
@@ -20,7 +20,7 @@ body {
     color: #90EE90;
     font-size: 1rem;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
 }
 
 
