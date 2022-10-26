@@ -20,7 +20,7 @@ body {
     color: #90EE90;
     font-size: 1rem;
     font-weight: 400;
-    text-align: left;
+    text-align: right;
 }
 
 
@@ -36,4 +36,5 @@ input[type="text"]:hover {
 
 .address{
     color: #ff0000;
+    text-align: right;
 }
