@@ -7,12 +7,12 @@ body {
 }
 
 .centre{
-    color: #000000;
+    color: #ff0000;
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
     margin: 0;
-    text-align: left;
+    text-align: right;
     font-style: italic;
 }
 
@@ -21,6 +21,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     font-style: bold;
+    text-align: right;
 }
 
 
